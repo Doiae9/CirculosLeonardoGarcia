@@ -1,5 +1,5 @@
 public class Circulo {
-
+    private float dia;
     private float Circun;
     private float radio;
 
@@ -9,22 +9,26 @@ public class Circulo {
 public Circulo(float radio){
         this.radio=radio;
 }
-    public void setRadio(float radio) {
+    public void setRadio() {
         this.radio = radio;
+
     }
 
     public Circulo() {
         System.out.println("No sirvo para nada");
     }
-    void diametro(){
-       float dia=0;
+    public void diametro(){
         dia=radio*2;
     }
-    void area(){
+    public void Area(){
         float area=0;
         area= (float) (3.1416*(Math.pow(radio, 2)));
     }
-    void Circun(){
-
+    public void Circunferencia(){
+        float circun=0;
+        this.dia=dia;
+        circun= (float) (3.141645*dia/(3.1416*radio*2));
     }
+
+
 }
